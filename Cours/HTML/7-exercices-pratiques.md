@@ -35,5 +35,3 @@ Les champs suivant doivent apparaître :
 - un bouton "envoyer".
 
 Les données devront être envoyées avec une requête "POST".
-
-
