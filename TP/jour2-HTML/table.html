@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tableau HTML</title>
+</head>
+<body>
+  <h1>Les tableaux</h1>
+  <p>
+    <a href="formulaires.html">Aller sur formulaires.html</a><br>
+    <a href="liens-et-ancres.html">Aller à liens-et-ancres.html</a>
+  </p>
+
+  <h2>tableau simple</h2>
+
+  <!-- table, tr, td, th, thead, tbody, tfoot, caption -->
+  <table border="1" width="100%">
+    <!-- ici tr est une ligne de tableau qui contient 2 cellules -->
+    <tr>
+      <td>ligne 1 cellule 1</td>
+      <td>ligne 1 cellule 2</td>
+    </tr>
+    <!-- ici une deuxième ligne avec 2 cellules -->
+    <tr>
+      <td>ligne 2 cellule 1</td>
+      <td>ligne 2 cellule 2</td>
+    </tr>
+  </table>
+
+  <h2>tableau complexe</h2>
+
+  <!-- tableau complexe -->
+  <table border="1" width="100%">
+    <caption>Titre du tableau</caption>
+    <thead>
+      <tr>
+        <th>entete de colonne 1</th>
+        <th>entete de colonne 2</th>
+        <th>entete de colonne 3</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>ligne 1 cellule 1</th>
+        <td>ligne 1 cellule 2</td>
+        <td>ligne 1 cellule 3</td>
+      </tr>
+      <tr>
+        <th>ligne 2 cellule 1</th>
+        <td>ligne 2 cellule 2</td>
+        <td>ligne 2 cellule 3</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <th>entete de colonne 1</th>
+        <th>entete de colonne 2</th>
+        <th>entete de colonne 3</th>
+      </tr>
+    </tfoot>
+  </table>
+
+  <h2>fusion de cellules</h2>
+  <!-- tableau avec fusion de cellules -->
+  <table border="1" width="100%" height="600px">
+    <tr>
+      <!-- td{cel $}*4 -->
+      <!-- colspan sert à fusionner horizontalement plusieurs td (ici 2 cellules) -->
+      <td colspan="2">ligne 1 cel 1 et 2</td>
+      <!-- rowspan sert à fusionner verticalement plusieurs td (ici 2 cellules) -->
+      <td rowspan="2">ligne 1 cel 3, ligne 2 cel 3</td>
+      <td>ligne 1 cel 4</td>
+    </tr>
+    <!-- tr>td{cel $}*4 -->
+    <tr>
+      <td>ligne 2 cel 1</td>
+      <td>ligne 2 cel 2</td>
+      <td>ligne 2 cel 4</td>
+    </tr>
+  </table>
+</body>
+</html>

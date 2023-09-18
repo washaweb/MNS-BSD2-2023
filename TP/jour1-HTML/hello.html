@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- la partie head n'est pas affichée à l'écran, elle contient les métas et des instructions pour le navigateur, comme l'encodage, des liens vers des scripts ou des css... -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titre de la page</title> 
+  </head>
+  <body>
+    <!-- le body contient le code html qui sera affiché par le navigateur.
+    Il existe des balises de type block (occupe tout l'espace) et des balises de type inline (reste avec le texte).
+    Il existe des balises ouvrantes/fermantes et des balises auto-fermantes
+    exemple de balises ouvrant / fermant : <p>peut contenir du texte ou d'autre balises</p>
+    exemple de balises auto-fermante : <br /> <img /> <input />
+    -->
+    <!-- balise HTML -->
+    <!-- balises de texte :p, h1, h2, h3, h4, h5, h6, br, strong, em, strike,...  -->
+    <p>Mon paragraphe <br> nouvelle ligne <strong>en bold</strong></p>
+    <h1>titre 1</h1>
+    <h2>titre 2 <em>text inline en italic</em> texte après le em</h2>
+    <h3>titre 3</h3>
+    <h4>titre 4</h4>
+    <h5>titre 5</h5>
+    <h6>titre 6</h6>
+
+    <!-- balises de séparation de contenus : span, div  -->
+    <div>La balise div permet d'entourer des antres balises sans modification de style, c'est une balise de type block</div>
+    <p>la balise span, entoure un texte avec un rendu de type inline, sans modifier le comportement de ce texte: <span>couleur différente</span></p>
+
+    <!-- balises de listes -->
+    <!-- ul, li, ol, dl, dt, dd -->
+    
+    <!-- unordored list -->
+    <ul>
+      <li>list element</li>
+      <li>list element</li>
+      <li>list element</li>
+      <li>
+        texte de la liste, avec une sous liste
+        <ul>
+          <li>liste de niveau 2</li>
+          <li>liste de niveau 2</li>
+          <li>liste de niveau 2</li>
+        </ul>
+      </li>
+    </ul>
+
+    <!-- ordored list -->
+    <ol>
+      <li>liste avec une numérotation</li>
+      <li>liste avec une numérotation</li>
+      <li>liste avec une numérotation</li>
+      <li>liste avec une numérotation</li>
+      <li>
+        On peut imbriquer les listes ordonnées et non ordonnées si on veut :
+        <ul>
+          <li>list de niveau 2</li>
+          <li>list de niveau 2</li>
+          <li>list de niveau 2</li>
+        </ul>
+      </li>
+    </ol>
+
+    <!-- definition list -->
+    <dl>
+      <dt>Titre de la définition</dt>
+      <dd>la définition exemple.</dd>
+      <dt>Man, N.M.</dt>
+      <dd>Homme, un être humain de sexe masculin.</dd>
+    </dl>
+    
+    <!-- balises de tableau -->
+    <!-- table, tr, td, th, thead, tbody, tfoot, caption -->
+    <table border="1" width="100%">
+      <!-- ici tr est une ligne de tableau qui contient 2 cellules -->
+      <tr>
+        <td>ligne 1 cellule 1</td>
+        <td>ligne 1 cellule 2</td>
+      </tr>
+      <!-- ici une deuxième ligne avec 2 cellules -->
+      <tr>
+        <td>ligne 2 cellule 1</td>
+        <td>ligne 2 cellule 2</td>
+      </tr>
+    </table>
+<p></p>
+    <!-- tableau complexe -->
+    <table border="1" width="100%">
+      <caption>Titre du tableau</caption>
+      <thead>
+        <tr>
+          <th>entete de colonne 1</th>
+          <th>entete de colonne 2</th>
+          <th>entete de colonne 3</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>ligne 1 cellule 1</th>
+          <td>ligne 1 cellule 2</td>
+          <td>ligne 1 cellule 3</td>
+        </tr>
+        <tr>
+          <th>ligne 2 cellule 1</th>
+          <td>ligne 2 cellule 2</td>
+          <td>ligne 2 cellule 3</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th>entete de colonne 1</th>
+          <th>entete de colonne 2</th>
+          <th>entete de colonne 3</th>
+        </tr>
+      </tfoot>
+    </table>
+
+
+
+    <!-- balises de formulaire  -->
+    <!-- form, input, label, fiedset, legend, select, textarea, button -->
+    
+    <!-- balises de médias -->
+    <!-- img, video, audio, figure, figcaption, picture -->
+
+    <!-- balises de navigation -->
+    <!-- a, menu, nav -->
+    
+    <!-- balises de structure de document -->
+    <!-- header, footer, main, aside, menu, section, article -->
+
+  </body>
+</html>

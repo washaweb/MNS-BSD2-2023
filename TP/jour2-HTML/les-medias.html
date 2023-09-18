@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Les médias</title>
+</head>
+<body>
+  <h1>Les Médias</h1>
+
+  <h2>Image</h2>
+
+  <!-- la balise img sert à afficher une image -->
+  <img width="400px" src="img/dog.jpg" alt="Image d'un chiot trop mignon" />
+
+  <br>
+  <!-- on peut faire un lien vers une image -->
+  <a href="img/dog.jpg">Lien vers l'image de chien</a>
+
+
+  <h2>Audio</h2>
+  
+  <audio controls autoplay src="medias/incredible.mp3"></audio>
+
+  <h3>Vidéo</h3>
+
+  <video width="50%" controls src="medias/demo-git.mp4" type="video/mp4"></video>
+
+  <h3>Iframe</h3>
+
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/rSc_K7KjEGo?si=BoRMnIfJnCukjG2e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+  <h3>Canvas</h3>
+
+  <canvas width="300" height="100">
+    Désolé, votre navigateur ne prend pas en charge &lt;canvas&gt;.
+  </canvas>
+  <script>
+    var canvas = document.querySelector("canvas");
+    var ctx = canvas.getContext("2d");
+    ctx.fillStyle = "green";
+    ctx.fillRect(10, 10, 100, 100);
+  </script>
+
+  </body>
+</html>

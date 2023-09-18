@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulaires</title>
+</head>
+<body>
+  <h1>Les formulaires HTML</h1>
+  <p>
+    <a href="liens-et-ancres.html">Aller à liens-et-ancres.html</a><br>
+    <a href="table.html">Aller à table.html</a>
+  </p>
+
+  <p>La balise form est utilisée pour créer un formulaire</p>
+
+  <form action="contact.php">
+    <!-- ici les données sont cloisonnées dans la balise form -->
+  </form>
+
+  <h2>Input</h2>
+
+  <p>La balise input est utilisée pour créer des champs de saisie de texte, des boutons radio, des cases à cocher, etc.</p>
+  
+  <!-- balise auto-fermente -->
+  <p>
+    <input type="text" />
+  </p>
+  <!-- p>input[type=text name="nom"  placeholder="Votre nom ici"] -->
+  <!-- on doit y insérer des attributs: name et placeholder, et souvent un id pour JavaScript -->
+
+  <!-- type text -->
+  <p>
+    <label for="nom">Votre nom:</label>
+    <input 
+      type="text"
+      name="nom"
+      id="nom"
+      value="John"
+      placeholder="Votre Nom ici..."
+    />
+  </p>
+  
+  <!-- type password -->
+  <p>
+    <label>
+      Mot de passe:
+      <input type="password" name="pass" id="pass" />
+    </label>
+  </p>
+
+  <!-- type checkbox -->
+  <p>
+    <label>
+      <input type="checkbox" name="ok" id="ok" value="accepté" />
+      Ok ?
+    </label>
+  </p>
+
+  <!-- type radio -->
+  <p>
+    <label>
+      <input type="radio" name="ouinon" id="oui" value="oui" />
+      Ok ?
+    </label>
+    <label>
+      <input type="radio" name="ouinon" id="non" value="non" />
+      pas Ok...
+    </label>
+  </p>
+
+  <h2>Textarea</h2>
+
+  <textarea placeholder="Votre message..." name="message" id="message" cols="50" rows="3">Message par défaut.</textarea>
+
+  <h2>Select et option</h2>
+
+  <select name="pays" id="pays">
+    <option value="">Sélectionnez...</option>
+    <option value="france">France</option>
+    <option value="luxembourg">Luxembourg</option>
+    <option value="belgique">Belgique</option>
+  </select>
+
+  <h2>Input file</h2>
+
+  <input type="file" name="fichier" id="fichier">
+
+  <h2>Input submit et button</h2>
+
+  <p>Pour envoyer un formulaire, on utiliser le type submit sur un input ou un bouton.</p>
+  <p>Le formulaire est alors envoyé vers la page spécifié dans l'attribut action de la balise form.</p>
+  <p>Ici, la page contact.php va recevoir les données du formulaire. (ici page fictive).</p>
+  <!-- 
+    Par défaut, le formulaire envoie les données en GET
+    GET
+    - La méthode GET envoie les données du formulaire en ajoutant les paramètres directement à l'URL.
+    - Les données sont visibles dans l'URL, ce qui signifie que les données sont transférées de manière transparente et peuvent être bookmarkées ou partagées.
+    POST
+    - La méthode POST envoie les données du formulaire de manière invisible dans le corps de la requête HTTP.
+    - Les données ne sont pas visibles dans l'URL.
+  -->
+  <form action="contact.php" method="POST">
+    <p>
+      <label for="name1">Votre nom :</label>
+      <input type="text" name="name1" id="name1">
+    </p>
+    <p>
+      <label for="pass1">Votre mot de passe :</label>
+      <input type="password" name="pass1" id="pass1">
+    </p>
+    <input type="submit" value="Valider">
+    <input type="reset" value="Effacer">
+    <!-- on peut aussi utiliser un bouton avec le type spécifié -->
+    <button type="submit">Valider</button>
+    <button type="reset">Effacer</button>
+    <button type="button">Juste un bouton</button>
+  </form>
+
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+
+</body>
+</html>

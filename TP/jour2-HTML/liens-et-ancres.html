@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liens et ancres</title>
+</head>
+<body>
+  <h1 id="pagetop">Liens et ancres</h1>
+
+  <h2>Lien absolut</h2>
+
+  <p>
+    <a href="https://google.com">Visiter le site Google</a><br>
+    <!-- target="_blank" permet d'ouvrir le lien dans un nouvel onglet  -->
+    <a target="_blank" href="https://washaweb.com">Visiter mon site</a>
+  </p>
+
+  <h2>Liens relatifs</h2>
+  <p>
+    <a href="formulaires.html">Aller sur formulaires.html</a><br>
+    <a href="table.html">Aller à table.html</a>
+  </p>
+
+  <h3>Liens vers des dossiers parents/enfants</h3>
+  <p>Le symbole ../ remonte d'un dossier</p>
+  <p>Pour descendre dans un dossier, il suffit d'utiliser son nom avec un slash `/`</p>
+
+  <h4>Exemples</h4>
+  <p>
+    <a href="../jour1-HTML/hello.html">Lien vers hello.html</a>
+  </p>
+
+  <h3>Lien vers des ancres de la page</h3>
+
+  <p>
+    <a href="#pagetop">Lien vers le haut de la page.</a>
+  </p>
+
+
+  <h3>Attention aux erreurs</h3>
+
+  <p>
+    <!-- ./ signifie "dans le dossier courant", il est donc inutile de le spécifier -->
+    <!-- attention à ne pas le confondre avec ../ ou / -->
+    <a href="./formulaires.html">Formulaires</a>
+    <a href="formulaires.html">Formulaires</a>
+    <!-- / tout seul, signifie "à la racine du serveur courant" -->
+    <a href="/formulaires.html">Formulaires</a>
+  </p>
+</body>
+</html>
