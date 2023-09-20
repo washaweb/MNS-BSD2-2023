@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selecteurs CSS</title>
+  <style>
+    /* pour les besoins du cours, je mets le code css directement ici dans la page, mais normalement il faudrait l'externaliser */
+
+    /* Les selecteurs css */
+    /* la balise */
+
+    /* ici on sélectionne toutes les balises p de la page */
+    div {
+      color: red;
+    }
+
+    /* selecteur enfant avec les balises */
+    div h2 { 
+      /* que les h2 qui sont enfant (à l'intérieur) d'une balise div */
+      color: green;
+    }
+
+    /* on peut créer une classe pour choisir sois-même les éléments à viser */
+    .maclasse {
+      color: blue;
+      font-size: 40px;
+    }
+    
+    /* on peut créer une classe pour choisir sois-même les éléments à viser */
+    #monidentifiantunique p {
+      color: orange;
+    }
+
+    /* le sélecteur global */
+    * {
+      font-size: 10px;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Les selecteurs de base</h1>
+  <h2>Vilain canard</h2>
+  <div>
+    <h2 class="maclasse">Titre</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, vel provident? Odit voluptas quo officia pariatur, ipsa exercitationem quis eveniet illum, nostrum architecto sit vitae laboriosam cupiditate, nulla rerum non.</p>
+  </div>
+  
+  <div id="monidentifiantunique">
+    <h2>Titre</h2>
+    <p class="maclasse">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, vel provident? Odit voluptas quo officia pariatur, ipsa exercitationem quis eveniet illum, nostrum architecto sit vitae laboriosam cupiditate, nulla rerum non.</p>
+  </div>
+  
+  <div>
+    <h2>Titre</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, vel provident? Odit voluptas quo officia pariatur, ipsa exercitationem quis eveniet illum, nostrum architecto sit vitae laboriosam cupiditate, nulla rerum non.</p>
+  </div>
+
+</body>
+</html>

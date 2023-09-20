@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La CSS</title>
+  <style>
+    /* on peut écrire du CSS dans une balise style */
+    /* on écrit des sélecteur CSS, syntaxe :
+
+    selecteur {
+      propriété1: valeur;
+      propriété2: valeur;
+    }
+     */
+    
+    p {
+      color: blue !important;
+    }
+  </style>
+  <!-- La meilleure solution pour insérer un fichier CSS dans un document est de l'externaliser dans un fichier dédié : -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1>Les CSS</h1>
+
+  <!-- on peut appliquer un style directement sur une balise, surtout utilisé par JavaScript -->
+  <p style="color: red;font-size: 32px;">Appliquer du style avec classe !</p>
+  <p>Le style c'est aussi dans la balise style du head :-)</p>
+
+  <p>mais c'est surtout depuis un fichier externe css/style.css</p>
+</body>
+</html>

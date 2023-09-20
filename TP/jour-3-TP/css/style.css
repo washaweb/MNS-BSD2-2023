@@ -1,0 +1,6 @@
+/* ici on peut importer une autre feuille de style */
+@import url('fonts.css');
+
+body {
+  background-color: #ffDDAA;
+}
