@@ -14,3 +14,11 @@ Supports de cours et travaux pratiques réalisés en cours de BSD2-2023, Metz Nu
 5. [Incorporer des médias](Cours/HTML/5-Incorporer-des-medias.md)
 6. [Liens et ancres](Cours/HTML/6-les-liens-et-les-ancres.md)
 7. [Exercices pratiques](Cours/HTML/7-exercices-pratiques.md)
+
+### CSS
+
+1. [Les bases du CSS](Cours/CSS/1-les-bases-du-css.md)
+2. [Le poids des sélecteurs](Cours/CSS/2-poids-des-selecteurs.md)
+3. [Syntaxe de base](Cours/CSS/3-syntaxe-de-base.md)
+4. [Propriétés de texte](Cours/CSS/4-proprietes-de-texte.md)
+5. [Unités de mesure](Cours/CSS/5-unites-de-mesure.md)
