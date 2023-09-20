@@ -5,6 +5,10 @@ Supports de cours et travaux pratiques réalisés en cours de BSD2-2023, Metz Nu
 > Réalisation: Jérôme Poslednik
 ## Cours
 
+### L'éditeur VSCode
+
+1. [Éditeur de Code et raccourcis](Cours/editeur-de-code-et-raccourcis.md)
+
 ### HTML
 
 1. [Les bases de l'HTML](Cours/HTML/1-les-bases-HTML.md)
