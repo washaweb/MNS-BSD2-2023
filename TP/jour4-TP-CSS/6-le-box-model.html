@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Les unités en CSS</title>
+  <style>
+    * {
+      /* box-sizing: content-box; */ /* par défaut, la mesure du contenu se'fait par rapport à l'intérieur du padding */
+      box-sizing: border-box; /* si j'utilise border-box, les largeur/hauteur définies avec width/height sont mesurées à partir de l'intérieur de la bordure, ce qui simplifie les calculs */
+    }
+
+    /* le box model, c'est la représentation d'une boite contrôlée par sa largeur, hauteur, ses marges et bordures */
+    .ma-boite {
+      /* border: 5px solid red; */
+      background-color: #FFAA11;
+      padding: 10px;
+      margin: 50px;
+      width: 200px;
+      height: 100px;
+    }
+
+    /* avec la propriété display, on peut changer le comportement par défaut des balises */
+    span.ma-boite {
+      display: block; /* change le display: inline par défaut d'un span en block */
+      display: inline-block; /* ici c'est un mix entre le inline et le block */
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Le box-model</h1>
+  
+  <div class="ma-boite">Voir les propriété css dans les styles...</div>
+
+  <p>exemple de boite dans le texte, <span class="ma-boite">ici ma boite</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia totam nostrum aperiam aspernatur provident cum? Molestiae porro aperiam amet, itaque, sit in sint nihil dolorum aut delectus facere, ipsa rerum.</p>
+
+</body>
+</html>

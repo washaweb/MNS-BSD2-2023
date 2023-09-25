@@ -1,0 +1,22 @@
+#titre1 {
+  font-size: 40px;
+}
+
+.intro {
+  color: blue;
+}
+span.intro {
+  color: green;
+}
+
+p {
+  font-size: 18px;
+}
+
+.menu {
+  font-size: 14px;
+}
+
+.rouge {
+  color: red;
+}

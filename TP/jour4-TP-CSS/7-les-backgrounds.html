@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Les backgrounds en CSS</title>
+  <style>
+    /* 
+      on utilise les background pour décorer un élément HTML, avec un arrière plan,
+      on peut y mettre une couleur, un dégradé de couleur ou une image
+     */
+    .box {
+      width: 400px;
+      height: 200px;
+      padding: 40px;
+      text-align: center;
+      background-color: red;
+      background-image: url('img/dog.jpg');
+      /* background-image: linear-gradient(to right, red, yellow); */
+      /* background-image: radial-gradient(circle, red, yellow); */
+      background-size: 50% auto; /* largeur hauteur */
+      /*background-size: cover;*/ /* cover: recouvre tout l'espace, même en rognant l'image */
+      /*background-size: contain;*/ /* contain: l'image est toujours contenue dans le div, laissant parfois apparaître la couleur de l'arrière plan */
+      background-position: 50% 50%; /* axe-h axe-v */
+      background-repeat: no-repeat; /*repeat-x, repeat-y repeat */
+    }
+    
+    /* syntaxe raccourcie */
+    .box2 {
+      width: 200px;
+      height: 200px;
+      /* background: on peut tout synthétiser en un seul raccourcis 
+        background: color image repeat position size;
+       */
+      background: cyan url('img/dog.jpg') no-repeat left center/50% 100%;
+    }
+    /* syntaxe des dégradés */
+    .box3 {
+      width: 200px;
+      height: 200px;
+      background: linear-gradient(180deg, #f0e407 0%, #f8a0fd 40%, rgba(8, 235, 239, 0.5) 80% );
+    }
+    .box4 {
+      width: 200px;
+      height: 200px;
+      /* Un dégradé qui part du centre du conteneur,
+        qui commence en rouge, passe par du bleu
+        et finit en vert. */
+      background: radial-gradient(circle at center, red 0, blue, green 100%);
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1>Cute cat</h1>
+  </div>
+
+  <div class="box2">
+    <h2>C'est la classe</h2>
+  </div>
+ 
+  <div class="box3">
+    <h2>Avec un dégradé</h2>
+  </div>
+  
+  <div class="box4">
+    <h2>Radial</h2>
+  </div>
+
+</body>
+</html>

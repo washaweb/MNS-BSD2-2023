@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Les propriétés de texte</title>
+  <style>
+    /* les propriétés css qui permettent de modifier l'apparence d'un texte */
+    p {
+      font-size: 20px; /* permet de changer la taille du texte */
+      font-family: 'Courier New', Courier, monospace; /* change la typographie affichée, toujours utiliser une famille de 'fall-back'*/
+      font-weight: bold; /* 100 à 900 ou normal, bold, light... */
+      font-style: italic; /* normal, italic */
+      text-decoration: underline; /*overline, underline, line-throuhg, none */
+      text-transform: uppercase; /* none, lowercase, capitalize, uppercase */
+      line-height: 2; /* multiple de la taille de typo */
+      line-height: 50px; /* multiple de la taille de typo */
+      letter-spacing: 10px; /* espace entre les lettres */
+      word-wrap: break-word; /* controle de la césure */
+      /*white-space: nowrap;*/ /* wrap/nowrap :controle le comportement des espaces entre les motes.  */
+      text-indent: 100px; /* indentation de la première ligne (peut-être négatif) */
+      text-align: center; /* left, right, center, justify */
+    }
+
+    p{
+      font-size: inherit; /* reset de la valeur */
+      font-size: initial;/* reset de la valeur à ses propriétés par défaut */
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Les propriétés de texte</h1>
+
+  <p>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe sed, modi deleniti aperiam aut exercitationem quas corrupti esse odio iste reprehenderit impedit hic nam, incidunt, quasi inventore laudantium placeat quos.
+  </p>
+
+</body>
+</html>
