@@ -138,3 +138,13 @@ span {
   background-color: red;
 }
 ```
+
+## Dessiner avec des CSS
+
+Vous pouvez trouver de nombreuses ressources sur internet pour apprendre à dessiner avec des CSS en utilisant des bords arrondis, des ombres portées, des tailles et des positions... voici quelques exemples pour aller plus loin :
+
+- https://css-tricks.com/the-shapes-of-css/
+- https://dev.to/poulamic/intro-to-creating-css-art-1ep5
+- https://www.youtube.com/watch?v=dq2hlbacOaM
+- https://redstapler.co/css-drawing-tutorial-for-beginners/
+
