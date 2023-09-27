@@ -29,3 +29,5 @@ Supports de cours et travaux pratiques réalisés en cours de BSD2-2023, Metz Nu
 6. [Les background en CSS](Cours/CSS/6-proprietes-de-background.md)
 7. [Le box model](Cours/CSS/7-le-box-model.md)
 8. [Sélecteurs CSS avancés](Cours/CSS/8-selecteurs-avances.md)
+9. [Exercices CSS 1](Cours/CSS/9-exercices-css.md)
+10. [Exercices CSS 2](Cours/CSS/10-exercice-cv.md)
