@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sélecteurs avancés en CSS</title>
+  <style>
+    .container {}
+    .header {}
+    .main {}
+
+    /* je veux différencier le rendu graphique des 2 listes qui se trouvent dans le header et dans main */
+    /* ici toutes les listes sont visées */
+    .list {
+      list-style-type: none;
+      padding: 15px;
+    }
+
+    
+    /* selecteur ' ' (espace), signifie tous les enfants et petits enfants (directs ou indirects)... */
+    /* ici seules les tags "li" qui se trouvent dans la classe .list qui est dans la classe .header sont visées */
+    .header .list li {
+      display: inline-block;
+      padding: 10px;
+      background-color: red;
+    }
+
+    /* selecteur '>', signifie tous les enfants DIRECTES. */
+    /* ici seules les li qui sont des enfants directs des ul qui sont des enfants directs des li qui sont dans .list qui est dans le .header sont visées */
+    .header .list li > ul > li {
+      background-color: blue;
+      color: #fff;
+    }
+
+    /* selecteur ' ' (espace), signifie tous les enfants et petits enfants... */
+    .main .list li {
+    	background-color: orange;
+      padding: 6px 30px;
+      margin-bottom: 2px;
+    }
+
+    /* selecteur '~' (tilda), signifie tous les frères directes et indirectes
+     ici les frères directs et indirects de balises p qui sont des balises p, à l'intérieur de .main */
+    .main p ~ p {
+    	color: red;
+    }
+
+    /* selecteur '+' (plus), signifie tous les frères directs de... ici les frères directs de balises p qui sont des balises p, à l'intérieur de .main */
+    .main p + p {
+    	font-weight: bold;
+      color: violet;
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="container">
+    <div class="header">
+      <h1>Titre de la page</h1>
+      <ul class="list">
+        <li>liste élément 1</li>
+        <li>liste élément 2
+          <ul>
+            <li>sous-element 1</li>
+            <li>sous-element 2</li>
+          </ul>
+        </li>
+        <li>liste élément 3
+          <ul>
+            <li>sous-element 1</li>
+            <li>sous-element 2</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="main">
+      <h2>titre 1</h2>
+      <p>paragraphe 1</p>
+      <p>paragraphe 1</p>
+      <div>
+        <!-- ici le h2 n'est plus un enfant directe de .main, puisqu'il se trouve dans un div, il est maintenant l'enfant directe de div -->
+        <h2>titre 2</h2>
+      </div>
+      <p>paragraphe 2</p>
+      <p>paragraphe 3</p>
+      <p>paragraphe 4</p>
+
+      <ul class="list">
+        <li>liste élément 1</li>
+        <li>liste élément 2</li>
+        <li>liste élément 3</li>
+        <li>liste élément 4</li>
+        <li>liste élément 5</li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+</html>

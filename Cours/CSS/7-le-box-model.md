@@ -13,14 +13,86 @@ Les principales propriétés CSS liées au modèle de boîte sont :
 2. **`padding`** :
    - `padding` détermine la distance entre le contenu de la boîte et sa bordure.
    - Vous pouvez spécifier les valeurs de `padding` de manière individuelle pour chaque côté (haut, droit, bas, gauche) ou utiliser `padding-top`, `padding-right`, `padding-bottom`, et `padding-left` pour définir des valeurs spécifiques.
+   
+   Exemple:
+
+   ```css
+   .maclasse {
+      padding: 20px; /* toutes les marges intérieurs à 20px */
+      padding: 20px 10px; /* Les marges intérieurs haut/bas à 20px gauche/droite à 10px */
+      padding: 20px 10px 15px; /* La marge intérieurs haut à 20px gauche/droite à 10px et bas à 15px */
+      /* on aurait pu aussi écrire : */
+      padding-top: 20px;
+      padding-left: 10px;
+      padding-bottom: 15px;
+      padding-right: 10px;
+   }
+   ```
 
 3. **`border`** :
    - `border` définit la bordure autour du contenu et du rembourrage.
    - Vous pouvez spécifier la largeur, le style et la couleur de la bordure. Par exemple : `border: 1px solid #000;`.
+   - vous pouvez spécifier les valeurs de `border` individuellement ou utiliser `border` qui est un raccourci pour toutes le valeurs de bordure.
+   
+   Exemple :
+
+   ```css
+   .maclasse {
+      
+      border-width: 1px; /* épaisseur de la bordure */
+      border-style: solid; /* le style de bordure (solid, dashed, dotted, double...) */
+      border-color: #ffdd00; /* le style de bordure (solid, dashed, dotted, double...) */
+      /* on aurait pu aussi écrire : */
+      border: 1px solid #ffdd00; /* raccourci */
+   }
+   ```
+   - on peut également définir chaque bordure indépendamment:
+   
+   Exemple :
+
+   ```css
+   .maclasse {
+      border-left-width: 1px; /* épaisseur de la bordure */
+      border-left-style: solid; /* le style de bordure (solid, dashed, dotted, double...) */
+      border-left-color: #ffdd00; /* le style de bordure (solid, dashed, dotted, double...) */
+      /* on aurait pu aussi écrire : */
+      border-left: 1px solid #ffdd00; /* raccourci */
+   }
+   ```
+   - on peut définir les coins arrondis grâce à `border-radius`
+   Exemple :
+
+   ```css
+      .maclasse {
+         border-radius: 50%; /* en pourcent ou pixels */
+         /* 
+         border-top-left-radius: 50px; 
+         border-top-right-radius: 100px; 
+         border-bottom-left-radius: 50%; 
+         border-bottom-right-radius: 10px; 
+         */
+         border-radius: 50px 100px 50% 10px;
+      }
+   ```
 
 4. **`margin`** :
    - `margin` définit l'espace entre la bordure de la boîte et les éléments voisins.
    - Comme avec `padding`, vous pouvez spécifier les valeurs de `margin` individuellement ou utiliser `margin-top`, `margin-right`, `margin-bottom`, et `margin-left`.
+   
+   Exemple:
+
+   ```css
+   .maclasse {
+      margin: 20px; /* toutes les marges extérieures à 20px */
+      margin: 20px 10px; /* Les marges extérieures haut/bas à 20px gauche/droite à 10px */
+      margin: 20px 10px 15px; /* La marge extérieures haut à 20px gauche/droite à 10px et bas à 15px */
+      /* on aurait pu aussi écrire : */
+      margin-top: 20px;
+      margin-left: 10px;
+      margin-bottom: 15px;
+      margin-right: 10px;
+   }
+   ```
 
 Le modèle de boîte par défaut de CSS est le modèle de boîte de contenu (`content-box`), où la largeur et la hauteur définies s'appliquent uniquement au contenu, et les paddings, bordures et marges sont ajoutés à ces dimensions. Cependant, il existe un autre modèle appelé le modèle de boîte de bordure (`border-box`) où les dimensions définies incluent les paddings et les bordures, et la marge est en dehors de ces dimensions.
 
@@ -59,7 +131,8 @@ Il est donc possible de modifier et de contrôler l'apparence d'un élément pou
 span {
   display: block; /* en changeant le display, j'obtient un comportement similaire à un div, de type block. */
   /* je peux ensuite lui appliquer des propriétés de block */
-  padding: 20px;
+  padding: 20px; /* losque les valeurs sont identiques, on peut raccourcir à une seule valeur, deux ou trois valeurs */
+  margin: 20px 10px 30px 24px; /* ici toutes les valeurs sont différents (haut droit bas gauche) dans le sens des aiguilles d'une montre en partant du haut. */
   width: 200px;
   height: 100px;
   background-color: red;

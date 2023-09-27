@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Margin, Padding, Border</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .box {
+      background-color: rgb(255, 170, 0);
+      width: 300px;
+      height: 300px;
+      text-align: center;
+      /* Marges extérieurs */
+      margin-top: 140px;
+      margin-right: 100px;
+      margin-bottom: 60px;
+      margin-left: 40px;
+      /* on peut aussi écrire avec le raccourcis margin */
+      margin: 140px 100px 60px 40px; /* haut droite bas gauche*/
+      margin: 140px 100px 60px; /* haut gauche/droite bas*/
+      margin: 140px 100px; /* haut/bas gauche/droite */
+      margin: 140px; /* haut/bas/gauche/droite */
+      /* Marges intérieures */
+      padding-top: 40px;
+      padding-right: 10px;
+      padding-bottom: 30px;
+      padding-left: 20px;
+      /* on peut aussi écrire avec le raccourcis padding */
+      padding: 40px 10px 30px 20px; /* haut droite bas gauche*/
+      padding: 40px 10px 30px; /* haut gauche/droite bas*/
+      padding: 40px 10px; /* haut/bas gauche/droite */
+      padding: 40px; /* haut/bas/gauche/droite */
+
+      /* bordures */
+      border-width: 5px;
+      border-style: dashed; /* solid, dotted, dashed... */
+      border-color: black;
+      /* on peut utiliser la propriété raccourcie */
+      border: 5px dotted orange;
+      /* et viser seulement l'une des bordures */
+      border-left: 20px solid blueviolet;
+      /* on peut aussi contrôler l'arrondi des angles */
+      border-radius: 50%;
+      /* border-radius: 50px 100px 50% 10px;
+      border-top-left-radius: 100%; */
+      /* voir https://css-tricks.com/the-shapes-of-css/ */
+      
+      /* box-shadow: [inset] décalx décaly largeur [force] couleur; */
+      box-shadow: 1px 0px 21px 6px rgb(226, 98, 255) inset;
+    }
+
+    .bluebox {
+      margin-top: -200px;
+      margin-left: 20px;
+      background-color: rgb(148, 148, 245);
+    }
+  </style>
+</head>
+<body>
+  <div class="box">boite 1</div>
+  <div class="box bluebox">boite 2</div>
+</body>
+</html>
