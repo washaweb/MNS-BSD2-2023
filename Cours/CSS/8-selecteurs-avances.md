@@ -56,7 +56,7 @@ Voici d'autres exemples de pseudo-classes couramment utilisées :
 
 - `:active` : Cible un élément lorsqu'il est activé, par exemple lorsqu'un lien est cliqué.
 - `:focus` : Cible un élément lorsqu'il est en cours de 'focus', par exemple lorsqu'un champ de formulaire est sélectionné.
-- `:blur` : Cible un élément lorsqu'il n'est plus en focus
+- `:visited` : Cible un lien qui a déjà été visité
 
 
 ### Exemples complet d'utilisation des pseudo-classes

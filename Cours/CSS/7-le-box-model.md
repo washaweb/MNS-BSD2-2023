@@ -102,6 +102,10 @@ Pour utiliser le modèle de boîte de bordure (`border-box`) au lieu du modèle 
 box-sizing: border-box;
 ```
 
+> voir ces exemples pour mieux comprendre l'importance du box-sizing:
+> https://fr.learnlayout.com/box-model
+> https://fr.learnlayout.com/box-sizing
+
 ## propriété display
 
 Le modèle de boite (box-model) ne s'applique pas de manière identique à tous les éléments d'une page. Certaines balises ont un rendu par défaut de type `inline`.

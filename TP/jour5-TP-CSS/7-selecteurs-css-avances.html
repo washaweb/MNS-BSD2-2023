@@ -50,6 +50,21 @@
     	font-weight: bold;
       color: violet;
     }
+
+    /* selecteur oar attribut html
+    on vise tous les éléments qui contiennent l'attribut */
+    [type="text"] {
+      border: 1px solid red;
+    }
+    /* on peut utiliser des expressions régulières 
+    attribut^="" commence par..
+    attribut$="" finit par.. 
+    attribut~="" contient.. 
+    attribut*="" contient (peu importe la casse).. 
+    */
+    [name^="ma"] {
+      background: orange;
+    }
   </style>
 </head>
 <body>
@@ -93,6 +108,16 @@
         <li>liste élément 5</li>
       </ul>
     </div>
+
+    <form action="#" method="POST">
+      <!-- input#tata.toto[name=main][type="text"] -->
+      <p><input class="toto" id="tata" name="main" type="text" /></p>
+      <p><input name="mail" type="email" /></p>
+      <p><input name="pass" type="password" /></p>
+      <p>
+        <button type="submit"></button>
+      </p>
+    </form>
   </div>
 
 </body>

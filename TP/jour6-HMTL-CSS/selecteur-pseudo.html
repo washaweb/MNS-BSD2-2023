@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pseudo-selecteurs Pseudo-classes</title>
+  <style>
+    /* Les pseudo classes */
+    a {
+      color: red;
+      text-decoration: none;
+    }
+    a:hover {
+      color: blue;
+      text-decoration: underline;
+    }
+    a:focus {
+      outline: 2px dotted red;
+    }
+    a:visited {
+      color: rgb(140, 9, 109);
+    }
+    /* Bouton */
+    button[type="submit"] {
+      border: none;
+      display: inline-block;
+      padding: 4px 16px;
+      border-radius: 4px;
+      background-color: red;
+    }
+    button[type="submit"]:hover {
+      background-color: rgb(167, 4, 4);
+    }
+    button[type="submit"]:active {
+      background-color: rgb(140, 9, 109);
+    }
+
+    /* pseudo-elements */
+    .boite {
+      text-align: center;
+      padding: 20px 100px;
+      background-color: rgb(93, 227, 216);
+      position: relative;
+    }
+    .boite::before {
+      content: '🫠 ';
+    }
+
+    .boite::after {
+      content: '';
+      display: block;
+      background: url('img/paper-scratch.png') repeat-x 0 100%/contain;
+      width: 100%;
+      height: 37px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+
+    /* pseudo-sélecteurs */
+      .menu li:first-of-type {
+        color: red;
+      }
+
+      .menu li:last-of-type {
+        color: blue;
+      }
+      
+      .menu li:nth-of-type(3) {
+        color: orange;
+      }
+      /* odd / even = un sur deux pair/impair */
+      .menu li:nth-of-type(even) {
+        color: pink;
+      }
+
+      .menu li:nth-of-type(4n + 5) {
+        color: purple;
+      }
+
+      .para:first-letter {
+        color: red;
+        font-size: 40px;
+      }
+      .para:first-line {
+        color: purple;
+      }
+  </style>
+</head>
+<body>
+  <h1>Pseudo Sélecteurs et pseudo-classes</h1>
+  <h2>Pseudo-classes</h2>
+  <ul>
+    <li><a href="#formulaire">Aller au formulaire</a></li>
+    <li><a href="https://www.orange.fr" target="_blank">Voir le site</a></li>
+  </ul>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et labore quia dicta voluptates iusto? Nesciunt reiciendis asperiores fuga a architecto voluptatum possimus, eius deserunt fugiat? Et commodi itaque quo fugit.</p>
+  <form action="" id="formulaire">
+    <input type="text" name="message">
+    <button type="submit">Valider</button>
+  </form>
+
+  <h2>Pseudos-elements</h2>
+
+  <div class="boite">Text dans le div</div>
+
+  <h2>Pseudo-sélecteurs</h2>
+  
+  <ul class="menu">
+    <li>liste 1</li>
+    <li>liste 2</li>
+    <li>liste 3</li>
+    <li>liste 4</li>
+    <li>liste 5</li>
+    <li>liste 6</li>
+    <li>liste 7</li>
+    <li>liste 8</li>
+    <li>liste 9</li>
+    <li>liste 10</li>
+  </ul>
+
+  <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quia dolores, odit autem deserunt perferendis possimus earum officiis maiores. Officiis voluptate reprehenderit eveniet exercitationem illum, aliquid beatae cum optio placeat.</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+</body>
+</html>
