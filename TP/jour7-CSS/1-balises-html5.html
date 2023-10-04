@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Balises HTML 5</title>
+</head>
+<body>
+  <!-- le header de la page -->
+  <header class="main-header">
+    <!-- le titre global de la page -->
+    <h1>Titre de la page</h1>
+    <!-- navigation principale de la page -->
+    <nav>
+      <ul>
+        <li><a href="#about">Lien about</a></li>
+        <li><a href="#portfolio">Lien Porfolio</a></li>
+        <li><a href="#contact">Lien contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- il ne peut y avoir qu'une seule balise main, c'est le contenu de la page -->
+  <main>
+    <!-- vous pouvez utiliser les section pour séparer des zones identifiables: about, contact... -->
+    <section>
+      <p>Une partie de la page à séparer du reste.</p>
+    </section>
+    <!-- un ou plusieurs articles, en fonction du contenu, si vous êtes sur un liste, un article par élément  -->
+    <article>
+      <!-- header de l'article -->
+      <header>
+        <h2>Titre de l'article</h2>
+        <p class="meta-datas">auteur: John Doe,<br>
+          date de publication: <time datetime="2023-10-12T19:00:00+01:00">12/10/2023 à 20h00</time></p>
+      </header>
+      <section>
+        <h3>Titre de la section 1 de l'article</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid accusantium doloribus aliquam, provident obcaecati, totam corporis suscipit soluta animi repudiandae consequatur iste inventore quaerat eaque fugit eligendi neque. Quaerat, repellendus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid accusantium doloribus aliquam, provident obcaecati, totam corporis suscipit soluta animi repudiandae consequatur iste inventore quaerat eaque fugit eligendi neque. Quaerat, repellendus.</p>
+      </section>
+      <section>
+        <h3>Titre de la section 2 de l'article</h3>
+        <figure>
+          <img src="https://picsum.photos/200/300" alt="Image exemple" />
+          <figcaption>
+            Je peux expliquer l'image ici
+          </figcaption>
+        </figure>
+      </section>
+      <!-- footer de l'article -->
+      <footer>
+        <p class="meta-datas">mots-clés: Metz, MNS, informatique</p>
+      </footer>
+    </article>
+    <aside>
+      <h4>Titre de l'aside</h4>
+      <p>Ici un contenu qui n'est pas forcément en relation avec l'article</p>
+    </aside>
+  </main>
+  <!-- footer de la page -->
+  <footer clas="main-footer">
+    <ul>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#mentions">Mentions légales</a></li>
+    </ul>
+    <div class="secondary-footer">
+      <p>© 2023 -MNS</p>
+    </div>
+  </footer>
+</body>
+</html>

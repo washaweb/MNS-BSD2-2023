@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Float et clear</title>
+  <style>
+    /* float permet de faire "flotter un élément à gauche ou à droite" */
+    .float-left {
+      float: left;
+      margin: 10px;
+    }
+    .float-right {
+      float: right;
+      margin: 10px;
+    }
+
+    .clear {
+      /* clear: left; */
+      /* clear: right; */
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+  <h2>Float et clear</h2>
+
+  <section>
+    <img class="float-right" src="https://picsum.photos/200/300" alt="Image exemple" />
+    <img class="float-left" src="https://picsum.photos/100/200" alt="Image exemple" />
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis assumenda est expedita atque aspernatur nostrum dolore maxime, corporis sequi. Aspernatur voluptates nisi voluptatem porro. Maxime hic ipsum totam temporibus recusandae.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis assumenda est expedita atque aspernatur nostrum dolore maxime, corporis sequi. Aspernatur voluptates nisi voluptatem porro. Maxime hic ipsum totam temporibus recusandae.</p>
+    <h2 class="clear">Mon titre</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis assumenda est expedita atque aspernatur nostrum dolore maxime, corporis sequi. Aspernatur voluptates nisi voluptatem porro. Maxime hic ipsum totam temporibus recusandae.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis assumenda est expedita atque aspernatur nostrum dolore maxime, corporis sequi. Aspernatur voluptates nisi voluptatem porro. Maxime hic ipsum totam temporibus recusandae.</p>
+  </section>
+</body>
+</html>

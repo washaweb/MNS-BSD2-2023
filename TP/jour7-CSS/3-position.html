@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Positions</title>
+  <style>
+    .container {
+      position: relative;
+      background-color: lightpink;
+    }
+    .box {
+      width: 200px;
+      height: 200px;
+      background-color: lightcoral;
+    }
+    .box-static {
+      position: static;
+    }
+    .box-relative {
+      /* à partir du moment ou une position est ≠ de static, on peut la positionner avec left, right, top, bottom, et on peut aussi régler son z-index */
+      position: relative;
+      left: 100px;
+      top: -50px;
+      background-color: lightgreen;
+      /*
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+      */
+    }
+
+    .box-absolute {
+      position: absolute;
+      top: -20px;
+      right: 100px;
+      background-color: lightgoldenrodyellow;
+    }
+
+    .box-fixed {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      z-index: 2;
+    }
+
+    .moove-me {
+      position: relative;
+      top: -10px;
+      left: 10px;
+      background-color: #cb77cc;
+    }
+  </style>
+</head>
+<body>
+  <h1>Positions</h1>
+
+  <div class="container">
+    <div class="box box-fixed">box 4 ici</div>
+    <div class="box box-static">box 1 ici</div>
+    <div class="box box-relative">box 2 ici</div>
+    <div class="box box-absolute">box 3 ici</div>
+    <p>
+      <span class="moove-me">Exemple de texte</span>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa at dolor porro consequuntur dolores odit fugit a rem quasi iste. Consequatur beatae voluptatibus earum quibusdam, delectus hic officiis error ab?</p>
+  </div>
+</body>
+</html>

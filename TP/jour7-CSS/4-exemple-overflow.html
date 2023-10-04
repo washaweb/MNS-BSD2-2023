@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemple de overflow</title>
+  <style>
+    .container {
+      width: 200px; /* Largeur de la boîte parente */
+      height: 200px; /* Hauteur de la boîte parente */
+      overflow: hidden;
+      /* overflow-x: none;
+      overflow-y: scroll; */
+      /* overflow: hidden; */
+       /* Masque le contenu qui dépasse */
+      border: 1px solid #ccc;
+      position: relative; /* Nécessaire pour le positionnement de l'élément caché */
+    }
+
+    .content {
+      width: 300px; /* Largeur du contenu dépassant la boîte parente */
+      height: 300px; /* Hauteur du contenu dépassant la boîte parente */
+      background-color: #007bff;
+      position: absolute; /* Position absolue par rapport à la boîte parente */
+      /*bottom: -300px;*/  /* Masque l'élément en dehors de la boîte parente */
+      top: 200px;
+      left: 0px; /* Place l'élément à gauche de la boîte parente */
+      /*opacity: 0;*/ /* Fait apparaître l'élément au survol */
+      transition: all 0.3s;
+       /* Ajoute une animation de transition */
+    }
+    
+    /* réaction au survol */
+    .container:hover .content {
+      opacity: 1; /* Fait apparaître l'élément au survol */
+      top: 0; /* Positionne l'élément à sa position initiale */
+    }
+  </style>
+</head>
+<body>
+  <h1>Apparaître au survol !</h1>
+
+  <div class="container">
+    <div class="content"></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemple de position sticky</title>
+</head>
+<body>
+  <h1>Position sticky</h1>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+    }
+    main {
+      background-color: lightcyan;
+    }
+
+    article {
+      /* ici on fait la colonne de gauche */
+      width: 70%;
+      margin-right: 30%; /* on laisse de l'espace à droite pour le flottant */
+      background-color: rgb(126, 219, 191);
+    }
+    .sticky-parent {
+      /* ici on fait la colonne de droite flottante */
+      float: right;
+      width: 30%;
+      position: relative;
+      height: 200vh; /* pour que le sticky puisse évoluer, je donne une hauteur à ma boite */
+      background-color: rgb(243, 193, 193);
+    }
+
+    .sticky {
+      /* la position sticky permet d'accrocher l'élément à la fenêtre, lorsque les limites de sont parent le permettent */
+      position: sticky;
+      top: 0px; /* top/bottom et right/left, nécéssaire pour définir le bord d'accroche du sticky */
+      right: 0;
+      width: 30%;
+      height: 200px;
+      background-color: lightcoral;
+    }
+
+  </style>
+  <main>
+    <div class="sticky-parent">
+      <aside class="sticky">
+        sticky me
+      </aside>
+    </div>
+    <article>
+      <h2>Exemple de beaucoup de texte, pour qu'il y ait un défilement vertical dans la page</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et vitae, sunt suscipit aliquid eaque nemo libero nisi recusandae, unde doloribus nesciunt vero ratione? Voluptatum corporis nisi neque cumque eveniet soluta!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et vitae, sunt suscipit aliquid eaque nemo libero nisi recusandae, unde doloribus nesciunt vero ratione? Voluptatum corporis nisi neque cumque eveniet soluta!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et vitae, sunt suscipit aliquid eaque nemo libero nisi recusandae, unde doloribus nesciunt vero ratione? Voluptatum corporis nisi neque cumque eveniet soluta!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et vitae, sunt suscipit aliquid eaque nemo libero nisi recusandae, unde doloribus nesciunt vero ratione? Voluptatum corporis nisi neque cumque eveniet soluta!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et vitae, sunt suscipit aliquid eaque nemo libero nisi recusandae, unde doloribus nesciunt vero ratione? Voluptatum corporis nisi neque cumque eveniet soluta!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et vitae, sunt suscipit aliquid eaque nemo libero nisi recusandae, unde doloribus nesciunt vero ratione? Voluptatum corporis nisi neque cumque eveniet soluta!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et vitae, sunt suscipit aliquid eaque nemo libero nisi recusandae, unde doloribus nesciunt vero ratione? Voluptatum corporis nisi neque cumque eveniet soluta!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et vitae, sunt suscipit aliquid eaque nemo libero nisi recusandae, unde doloribus nesciunt vero ratione? Voluptatum corporis nisi neque cumque eveniet soluta!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et vitae, sunt suscipit aliquid eaque nemo libero nisi recusandae, unde doloribus nesciunt vero ratione? Voluptatum corporis nisi neque cumque eveniet soluta!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et vitae, sunt suscipit aliquid eaque nemo libero nisi recusandae, unde doloribus nesciunt vero ratione? Voluptatum corporis nisi neque cumque eveniet soluta!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et vitae, sunt suscipit aliquid eaque nemo libero nisi recusandae, unde doloribus nesciunt vero ratione? Voluptatum corporis nisi neque cumque eveniet soluta!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et vitae, sunt suscipit aliquid eaque nemo libero nisi recusandae, unde doloribus nesciunt vero ratione? Voluptatum corporis nisi neque cumque eveniet soluta!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et vitae, sunt suscipit aliquid eaque nemo libero nisi recusandae, unde doloribus nesciunt vero ratione? Voluptatum corporis nisi neque cumque eveniet soluta!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et vitae, sunt suscipit aliquid eaque nemo libero nisi recusandae, unde doloribus nesciunt vero ratione? Voluptatum corporis nisi neque cumque eveniet soluta!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et vitae, sunt suscipit aliquid eaque nemo libero nisi recusandae, unde doloribus nesciunt vero ratione? Voluptatum corporis nisi neque cumque eveniet soluta!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et vitae, sunt suscipit aliquid eaque nemo libero nisi recusandae, unde doloribus nesciunt vero ratione? Voluptatum corporis nisi neque cumque eveniet soluta!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et vitae, sunt suscipit aliquid eaque nemo libero nisi recusandae, unde doloribus nesciunt vero ratione? Voluptatum corporis nisi neque cumque eveniet soluta!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et vitae, sunt suscipit aliquid eaque nemo libero nisi recusandae, unde doloribus nesciunt vero ratione? Voluptatum corporis nisi neque cumque eveniet soluta!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et vitae, sunt suscipit aliquid eaque nemo libero nisi recusandae, unde doloribus nesciunt vero ratione? Voluptatum corporis nisi neque cumque eveniet soluta!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et vitae, sunt suscipit aliquid eaque nemo libero nisi recusandae, unde doloribus nesciunt vero ratione? Voluptatum corporis nisi neque cumque eveniet soluta!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et vitae, sunt suscipit aliquid eaque nemo libero nisi recusandae, unde doloribus nesciunt vero ratione? Voluptatum corporis nisi neque cumque eveniet soluta!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et vitae, sunt suscipit aliquid eaque nemo libero nisi recusandae, unde doloribus nesciunt vero ratione? Voluptatum corporis nisi neque cumque eveniet soluta!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et vitae, sunt suscipit aliquid eaque nemo libero nisi recusandae, unde doloribus nesciunt vero ratione? Voluptatum corporis nisi neque cumque eveniet soluta!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et vitae, sunt suscipit aliquid eaque nemo libero nisi recusandae, unde doloribus nesciunt vero ratione? Voluptatum corporis nisi neque cumque eveniet soluta!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et vitae, sunt suscipit aliquid eaque nemo libero nisi recusandae, unde doloribus nesciunt vero ratione? Voluptatum corporis nisi neque cumque eveniet soluta!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et vitae, sunt suscipit aliquid eaque nemo libero nisi recusandae, unde doloribus nesciunt vero ratione? Voluptatum corporis nisi neque cumque eveniet soluta!</p>
+    </article>
+    
+  </main>
+</body>
+</html>

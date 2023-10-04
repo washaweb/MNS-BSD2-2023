@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Mon premier layout</title>
+	<!-- ecrire vos styles dans la feuille de style suivante -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+	<!-- 
+
+		énoncé :
+		======
+		* réaliser un layout avec les propriétés CSS: float, display, clear
+		* créer un header avec la balise <header></header>
+		* dans le header, créer une <nav> avec un <ul> et 4 <li> contenant des liens
+		* réaliser une navigation horizontale
+		* sous le header ajouter une <section></section>
+		* contenu de la section : 
+		  - une balise <article>contenu de votre choix</article>
+		  - une balise <aside>contenu de votre choix</aside>
+		* sous la section ajouter un <footer>contenu de votre choix</footer>
+
+		* dans la section, l'article et l'aside doivent former 2 colonnes (flottant)
+		 - article: largeur 70%
+		 - aside: largeur 30%
+
+		* le header et le footer devront avoir la hauteur de 150px (avec une couleur d'arrière plan pour les distinguer).
+
+	-->
+  <header>
+    <nav class="primary-nav">
+      <ul>
+        <li><a href="#about">About</a></li><li><a href="#blog">Blog</a></li><li><a href="#porfolio">Porfolio</a></li><li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <article>
+        <h2>Titre de l'article</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae dignissimos aliquam, quas tenetur ut tempora fuga culpa ab aspernatur earum libero aperiam quaerat, a itaque illum magnam consectetur quia natus?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae dignissimos aliquam, quas tenetur ut tempora fuga culpa ab aspernatur earum libero aperiam quaerat, a itaque illum magnam consectetur quia natus?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae dignissimos aliquam, quas tenetur ut tempora fuga culpa ab aspernatur earum libero aperiam quaerat, a itaque illum magnam consectetur quia natus?</p>
+      </article>
+      <aside>
+        <h2>aside title</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae dignissimos aliquam, quas tenetur ut tempora fuga culpa ab aspernatur earum libero aperiam quaerat, a itaque illum magnam consectetur quia natus?</p>
+      </aside>
+    </section>
+  </main>
+  <footer>
+    contenu de votre choix
+  </footer>
+
+</body>
+</html>
