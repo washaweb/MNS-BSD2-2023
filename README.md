@@ -18,6 +18,7 @@ Supports de cours et travaux pratiques réalisés en cours de BSD2-2023, Metz Nu
 5. [Incorporer des médias](Cours/HTML/5-Incorporer-des-medias.md)
 6. [Liens et ancres](Cours/HTML/6-les-liens-et-les-ancres.md)
 7. [Exercices pratiques](Cours/HTML/7-exercices-pratiques.md)
+8. [Les balises HTML5](Cours/HTML/8-balises-HTML-5.md)
 
 ### CSS
 
@@ -31,3 +32,7 @@ Supports de cours et travaux pratiques réalisés en cours de BSD2-2023, Metz Nu
 8. [Sélecteurs CSS avancés](Cours/CSS/8-selecteurs-avances.md)
 9. [Exercices CSS 1](Cours/CSS/9-exercices-css.md)
 10. [Exercices CSS 2](Cours/CSS/10-exercice-cv.md)
+11. [Float et clear](Cours/CSS/11-float.md)
+12. [Position, z-index et overflow](Cours/CSS/12-positionnement.md)
+13. [Exercices float](Cours/CSS/13-1-exercice-css-float.md)
+14. [Exercices position](Cours/CSS/13-2-exercice-css-position.md)
