@@ -1,0 +1,63 @@
+/* 
+Display: flex; permet de disposer les enfants du conteneur qui a la propriété display: flex; en colonnes et/ou lignes
+ */
+/* décoratif */
+ section {
+  border: 1px dotted red;
+ }
+
+ .container-flex {
+  height: 600px;
+  /* on place la propriété sur le parent, pour contrôler ses enfants directs (ici les sections) */
+    display: flex;
+    flex-direction: row; /* row*, column, row-reverse, column-reverse */
+    justify-content: flex-start;
+    /* justify-content: flex-start*, flex-end, center, space-between, space-around, space-evenly  */
+    align-items: center;
+    /* align-items: flex-start, flex-end, stretch*, center */
+    width: 100%;
+    border: 2px solid blue;
+    /* gap:  espacement entre chaque flex-item dans le conteneur */
+    gap: 20px;
+    gap-row: 40px;
+    gap-column: 10px;
+ }
+
+ /* par défaut, le colonnes ont la même largeur, à moins de leur spécifier une largeur propre */
+
+/* .container-flex section:first-child { */
+  /* width: 100px; */
+  /* on peut contrôler l'enfant d'un flex lui-même avec align-self */
+  /* align-self: flex-end; */
+  /* height: 200px; */
+/* } */
+
+/* on peut contrôler le poids de chaque colonne avec flex-shrink, flex-grow, flex-basis et la propriété raccourcie flex */
+.container-flex section {
+  flex: 1 1 1;
+  flex: 1; /* quand toutes les valeurs sont identiques, pas besoin de se répéter... */
+}
+ 
+.container-flex section:last-child {
+  /* les marges et padding continuent de s'appliquer */
+  margin-left: 20px;
+ }
+
+/* exemple du menu */
+ .menu {
+  margin: 0 0 20px;
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+  justify-content: flex-start;
+  gap: 10px;
+ }
+ 
+ .menu li a {
+  display: block;
+  padding: 4px 16px;
+  background-color: red;
+  color: white;
+  text-decoration: none;
+}
+
