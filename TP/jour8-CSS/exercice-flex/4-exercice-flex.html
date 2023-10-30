@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    header, footer {
+      background-color: cyan;
+    }
+    main {
+      background-color: lightgoldenrodyellow;
+    }
+
+    /* à l'aide de conteneurs flexs, réaliser la disposition suivante::after
+    
+    - le header et le footer doivent avoir une hauteur de 200px;
+    - le main doit avoir le reste de la hauteur de fenêtre (çàd occuper tout l'écran moins la hauteur du header, footer)
+    - styler le bouton et le centrer verticalement et horizontalement dans son conteneur
+
+    - Réaliser un menu horizontal avec la navigation
+    - Disposer le title horizontalement à gauche, la navigation à droite, le tout centré verticalement dans le header
+    */
+  </style>
+</head>
+<body>
+  <header class="main-header">
+    <h1 class="title">Ma compagnie</h1>
+    <nav class="main-nav">
+      <ul class="menu">
+        <li><a href="#">Lien 1</a></li>
+        <li><a href="#">Lien 2</a></li>
+        <li><a href="#">Lien 3</a></li>
+        <li><a href="#">Lien 4</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="container">
+      <div>
+        <button>Mon bouton</button>
+      </div>
+    </div>
+  </main>
+  <footer>
+    © 2023 - MNS CSS Flex
+  </footer>
+</body>
+</html>
