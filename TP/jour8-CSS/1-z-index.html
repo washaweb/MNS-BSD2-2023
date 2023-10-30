@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Z-index</title>
+
+  <style>
+    /* ATTENTION AVEC LES Z-INDEXs */
+    .box {
+      background-color: red;
+      width: 200px;
+      height: 200px;
+    }
+    /* si un parent à dispose d'un z-index... */
+    .parent-1 {
+      background-color: cyan;
+      height: 300px;
+      position: relative;
+      z-index: 1;
+    }
+    /* ...le z-index de ses enfants se calcul dans l'espace (le scope)
+    du z-index du parent (çàd ici le parent-1 qui a un z-index: 1).
+    Dans cet exemple, la box (z-index: 3) qui est dans .parent-1 (z-index: 1) 
+    se retrouve cachée par .parent-2 (z-index: 2), même si son propre z-index est supérieur.
+    n fait il se place dans l'espace du z-index: 1 de son parent. */
+    .parent-1 .box {  
+      background-color: pink;
+      position: absolute;
+      top: 200px;
+      left: 200px;
+      z-index: 3;
+    }
+    .parent-2 {
+      position: relative;
+      background-color: green;
+      height: 300px;
+      z-index: 2;
+    }
+  </style>
+</head>
+<body>
+  <div class="parent-1">
+    <div class="box">
+      test
+    </div>
+  </div>
+  <div class="parent-2">
+    <div class="box">
+      test
+    </div>
+  </div>
+</body>
+</html>
