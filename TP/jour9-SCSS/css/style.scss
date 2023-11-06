@@ -1,0 +1,19 @@
+// on peut créer des variables
+$easeElastic: cubic-bezier(0.000, 0.405, 0.310, 1.650);
+
+
+@import '_reset.scss';
+@import '_elements.scss';
+@import '_layout.scss';
+
+
+    /* ----------------- enoncé ------------------------ */
+    /* à l'aide de conteneurs flexs, réaliser la disposition suivante::after
+    
+    - le header et le footer doivent avoir une hauteur de 200px;
+    - le main doit avoir le reste de la hauteur de fenêtre (çàd occuper tout l'écran moins la hauteur du header, footer)
+    - styler le bouton et le centrer verticalement et horizontalement dans son conteneur
+
+    - Réaliser un menu horizontal avec la navigation
+    - Disposer le title horizontalement à gauche, la navigation à droite, le tout centré verticalement dans le header
+    */

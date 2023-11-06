@@ -1,0 +1,51 @@
+
+    /* ELEMENTS DE LA PAGE 
+    ************************************************ */
+    body {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+
+    a {
+      color: var(--raspberry);
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    
+    /* ELEMENT bouton  */
+    button {
+      border: none;
+      color: var(--white);
+      background-color: var(--raspberry);
+      padding: 6px 24px;
+      border-radius: 8px;
+    }
+
+    a, button {
+      display: block;
+      background-color: var(--raspberry);
+      color: var(--white);
+      padding: 8px 24px;
+      transition: .3s;
+      &:hover,
+      &:active,
+      &:focus {
+        background-color: var(--xanthous);
+        text-decoration: none;
+        transition: background-color 2ms ease, transform .4s $easeElastic;
+        transform: translate(0, -10px) scale(1.2);
+      } 
+    }
+    
+
+    footer {
+      position: relative;
+      top: 0;
+      transition: .4s $easeElastic;
+      &:hover {
+        top: -50px;
+      }
+    }

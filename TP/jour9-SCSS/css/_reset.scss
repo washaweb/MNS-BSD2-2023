@@ -1,0 +1,24 @@
+/* RESET :
+    Je style les propriétés globales de mon document 
+    *********************************************************** */
+
+
+    body {
+      /* Exemple d'utilisation de variables */
+      --white: #fff;
+      --denim: #2e5eaaff;
+      --keppel: #30b09dff;
+      --celadon: #b9e3b5ff;
+      --xanthous: #ffbc42ff;
+      --raspberry: #d81159ff;
+      /* reset des valeurs par défaut du body */
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      line-height: 20px;
+    }
+    /* reset des marges de titres */
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 0;
+      padding-top: 1em;
+    }

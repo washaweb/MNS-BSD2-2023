@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animations en CSS</title>
+  <style>
+    /* la propriété transition permet de déclencher une animation (une interpolation de mouvement entre 2 états  */
+    .box  {
+      /* état normal */
+      background-color: tomato;
+      width: 200px;
+      height: 200px;
+
+      transition-duration: 1s; /* la durée de la transition; */
+      transition-property: width; /* propriété visée par la transition; */
+      transition-timing-function: ease; /* fonction d'animation (courbe mathématique) */
+       /* linear, ease, ease-in, ease-out, ease-in-out, cubic-bezier(<fonction mathematique>); */
+
+      transition-delay: .5s; /* départ différé de l'animation */
+      /* on peut résumer toutes ces valeurs dans la propriété raccourcie transition: */
+      
+      /* property duration delay ease */
+      transition: width 1s .5s ease;
+      
+      /*
+       exemple avec plusieurs propriétés animées:
+       */
+      transition-duration: 1s, 0.4s;
+      transition-property: width, opacity;
+      transition-timing-function: ease, ease;
+      transition-delay: 0, .4s;
+    }
+
+    .box:hover {
+      /* état survolé */
+      width: 400px;
+      opacity: .6;
+    }
+
+    /* exemple avec un lien */
+    .lien  {
+      color: white;
+      display: inline-block;
+      padding: 10px 20px;
+      text-decoration: none;
+      background-color: red;
+      transition: all 0.3s ease;
+    }
+    .lien:hover {
+      background-color: green;
+    }
+    .menu  {}
+  </style>
+</head>
+<body>
+  <h1>Animations</h1>
+
+  <h2>La propriété transition</h2>
+
+  <div class="box">contenu</div>
+  <p>
+    <a class="lien" href="#">mon lien</a>
+  </p>
+
+  <footer>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+  </footer>
+</body>
+</html>

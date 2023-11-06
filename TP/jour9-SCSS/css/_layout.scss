@@ -1,0 +1,48 @@
+
+    /* LAYOUT
+    ******************************************************************/
+    /* Je configure mon layout en mettant des commentaires par section */
+    header, footer {
+      background-color: var(--keppel);
+      color: var(--white);
+      height: 200px;
+    }
+
+    /* haut de page 
+    **************************************** */
+
+    // en scss on peut utiliser des commentaires avec // qui sont effacés à la compilation
+    .main-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      // on peut imbriquer les sélecteurs
+      //ici le h1 est en fait le selecteur .main-header h1 {}
+      h1 {
+        padding-top: 0;
+        margin-bottom: 0;
+      }
+      .menu {
+        display: flex;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+    }
+
+    
+
+
+    /* partie centrale
+    **************************************** */
+    main {
+      background-color: var(--celadon);
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* pied de page
+    **************************************** */

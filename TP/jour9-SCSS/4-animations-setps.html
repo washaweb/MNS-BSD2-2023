@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animation image par image</title>
+  <style>
+    body {
+      background-color: skyblue;
+    }
+
+    .bird-1 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50px);
+      background: url('imgs/bird-anim-1.png') no-repeat 0 0/640px 54px;
+      animation: birds 1s steps(8) infinite;
+      width: 80px;
+      height: 54px;
+    }
+
+    @keyframes birds {
+      from {
+        background-position: 0 0;
+      }
+      to {
+        background-position: -640px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="bird-1"></div>
+</body>
+</html>

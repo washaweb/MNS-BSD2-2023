@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animations avec keyframes</title>
+  <style>
+    .cuby {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      background-color: #57a022;
+      color: #fff;
+      width: 200px;
+      height: 200px;
+      border-radius: 40px;
+      display: flex;
+      font-size: 100px;
+      line-height: 200px;
+      justify-content: center;
+      align-items: center;
+      transform-origin: center;
+      transform: translate(-50%, -50%);
+      transition: 1s;
+      animation-duration: 5s; /* durée de l'animation en secondes (s) ou millisecondes (ms) */
+      animation-timing-function: ease; /* même chose que pour les transitions */
+      animation-delay: .4s; /* délais de départ en secondes (s) ou millisecondes (ms) */
+      animation-fill-mode: both; /* normal, none, backwards, forwards */
+      animation-direction: reverse; /* normal / reverse */
+      animation-iteration-count: 1; /* nombre de fois que l'animation est jouée (chiffre ou infinite) */
+      animation-name: move;
+    }
+
+    .cuby:hover {
+      transform: translate(-50%, -50%) scale(1.2) rotate(180deg);
+    }
+
+
+    @keyframes move {
+      from {
+        left: 50%;
+        top: 50%;
+      }
+      25% {
+        top: calc(0% + 100px);
+        left: calc(100% - 100px);
+      }
+      50% {
+        top: calc(100% - 100px);
+        left: calc(100% - 100px);
+      }
+      75% {
+        left: calc(0% + 100px);
+        top: calc(100% - 100px);
+      }
+      to {
+        left: calc(0% + 100px);
+        top: calc(0% + 100px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>
+    cubi animations
+  </h1>
+
+  <div class="cuby">
+    <span>;-)</span>
+  </div>
+</body>
+</html>
