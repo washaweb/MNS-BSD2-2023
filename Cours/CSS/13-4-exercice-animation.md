@@ -1,6 +1,6 @@
 # Exercice 13-4 animation
 
-Suite de l'exercice 13.
+Suite de l'exercice 13-2.
 
 Reprennez le résultat de votre exercice 13-2 (exercice de position des image du train).
 
