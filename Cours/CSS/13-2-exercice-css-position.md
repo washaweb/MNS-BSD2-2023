@@ -12,4 +12,4 @@
 - Téléchargez les éléments en pièce jointe de l'exercice pour commencer
 - **Objectif bonus:** réaliser l'intégration des animations pour les oiseaux et la fumée de cheminée du train
 
-Les élements nécessaires à la réalisation de cet exercice sont [téléchargeables ici](https://washaweb.com/ftp/exercice-train.zip)
+Les élements nécessaires à la réalisation de cet exercice sont disponibles dans le dossier [Ressources/13-exercice-float-position](../ressources/13-exercice-float-position)
