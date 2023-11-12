@@ -11,4 +11,4 @@
   - Sur mobile, inverser l'ordre des contenus et mettre toutes les colonnes en pleine largeur.
   - Sur Tablette, modifer les espaces et les largeurs des sous-colonnes
 
-Les élements nécessaires à la réalisation de cet exercice sont disponibles dans le dossier [Ressources/16-exercice-colonnes-bootstrap](../Ressources/16-exercice-colonnes-bootstrap/)
+Les élements nécessaires à la réalisation de cet exercice sont disponibles dans le dossier [ressources/16-exercice-colonnes-bootstrap](../ressources/16-exercice-colonnes-bootstrap/)
