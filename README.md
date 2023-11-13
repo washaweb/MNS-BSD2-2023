@@ -36,8 +36,9 @@ Supports de cours et travaux pratiques réalisés en cours de BSD2-2023, Metz Nu
 - [Propriété Transform](Cours/CSS/14-transform.md)
 - [Flexbox system](Cours/CSS/15-flexbox-system.md)
 - [Grid system](Cours/CSS/16-grid-system.md)
-- [Reset et normalize](Cours/CSS/17-reset-et-normalize.md)
-- [Framework CSS](Cours/CSS/18-framework-css.md)
+- [Responsive Web Design](Cours/CSS/17-Responsive-web-design.md)
+- [Reset et normalize](Cours/CSS/18-reset-et-normalize.md)
+- [Framework CSS](Cours/CSS/19-framework-css.md)
 
 ### Exercices
 
