@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid template area</title>
+  <style>
+    html, body {
+      height: 100vh;
+      margin: 0;
+    }
+    .grid-layout {
+      display: grid;
+      grid-template-columns: 100px 1fr 100px;
+      grid-template-rows: 150px calc(100vh - 230px) 80px;
+      grid-template-areas: 
+        "header header header"
+        "main main sidebar"
+        "space1 footer space2";
+    }
+    header {
+      grid-area: header;
+      background-color: cyan;
+    }
+    main {
+      grid-area: main;
+      background-color: orange;
+    }
+    aside {
+      grid-area: sidebar;
+      background-color: tomato;
+    }
+    footer {
+      grid-area: footer;
+      background-color: cyan;
+    }
+    /* voir la chaine youtube https://www.youtube.com/@KevinPowell pour des tutos en anglais sur le grid et sur les css en général */
+  </style>
+</head>
+<body>
+  <div class="grid-layout">
+    <header>
+      Contenu du header
+    </header>
+    <main>
+      contenu main
+    </main>
+    <aside>
+      contenu aside
+    </aside>
+    <footer>
+      Contenu du footer
+    </footer>
+  </div>
+</body>
+</html>

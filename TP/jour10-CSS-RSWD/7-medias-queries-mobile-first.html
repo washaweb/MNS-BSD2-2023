@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Queries et RSWD</title>
+  <style>
+    /* les règles css générales (pour desktop) ici je ne suis pas en mobile-first */
+    body {
+      font-size: 16px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+
+    .ma-boite { 
+      background-color: red;
+      padding: 60px;
+      transition: 1s;
+    }
+
+    @media screen and (min-width: 480px) {
+      h1 {
+        font-size: 1.9rem;
+      }
+      .ma-boite {
+        background-color: orange;
+      }
+    }
+    @media screen and (min-width: 768px){
+      h1 {
+        font-size: 2.2rem;
+      }
+      .ma-boite {
+        background-color: yellow;
+      }
+    }
+    @media screen and (min-width: 980px){
+      h1 {
+        font-size: 2.5rem;
+      }
+      .ma-boite {
+        background-color: pink;
+      }
+    }
+    @media screen and (min-width: 1280px){
+      h1 {
+        font-size: 3rem;
+      }
+      .ma-boite {
+        background-color: tomato;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Responsive web design</h1>
+
+  <div class="ma-boite">
+    <p>Exemple de texte</p>
+  </div>
+</body>
+</html>

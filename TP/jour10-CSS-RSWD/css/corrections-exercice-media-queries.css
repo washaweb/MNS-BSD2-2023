@@ -1,0 +1,41 @@
+/* responsive design mobile first */
+
+/* smartphone */
+@media screen and (min-width: 480px) {
+	.container {
+		flex-direction: row;
+	}
+}
+/* small tablets */
+@media screen and (min-width: 768px) {
+	header nav ul {
+		flex-direction: row;
+	}
+	.wrapper {
+		width: 768px;
+	}
+}
+
+/* big tablets and small screens */
+@media screen and (min-width: 980px) {
+	.wrapper {
+		width: 980px;
+	}
+}
+
+/* desktop screen and larger devices (tv, projector...) */
+@media screen and (min-width: 1170px) {
+	.wrapper {
+		width: 1170px;
+	}
+}
+
+
+/* -------------------------------
+css for printers */
+@media print {
+	body *, body * * {
+		color: #000 !important;
+		background: transparent !important;
+	}
+}
