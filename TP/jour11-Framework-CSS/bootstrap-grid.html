@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Grid</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+  <h1>La grille de Bootstrap</h1>
+<h2>Conteneurs</h2>
+
+<div class="container bg-info p3">conteneur fixe</div>
+<div class="container-sm bg-info p3">conteneur fixe</div>
+<div class="container-md bg-info p3">conteneur fixe</div>
+<div class="container-lg bg-info p3">conteneur fixe</div>
+<div class="container-xl bg-info p3">conteneur fixe</div>
+<div class="container-xxl bg-info p3">conteneur fixe</div>
+<div class="container-fluid bg-warning p3">conteneur fluid</div>
+
+<h2>Les lignes et les colonnes</h2>
+<p>Bootstrap utilise une grille de 12 emplacements (colonnes)</p>
+<div class="container bg-warning">
+  <div class="row">
+    <!-- div.col*12>div.bg-info.p-2{col-$} -->
+    <div class="col"><div class="bg-info p-2">col-1</div></div>
+    <div class="col"><div class="bg-info p-2">col-2</div></div>
+    <div class="col"><div class="bg-info p-2">col-3</div></div>
+  </div>
+</div>
+<h2>
+  Le grid system permet de modifier les largeurs de colonnrs sur une base de 12
+</h2>
+
+<div class="container bg-warning">
+  <div class="row">
+    <!-- div.col*12>div.bg-info.p-2{col-$} -->
+    <div class="col-6"><div class="bg-info p-2">col-1</div></div>
+    <div class="col-2"><div class="bg-info p-2">col-2</div></div>
+    <div class="col-4"><div class="bg-info p-2">col-3</div></div>
+  </div>
+</div>
+
+<h2>
+  Le grid system est responsive et utilise les breakpoints
+</h2>
+
+<div class="container bg-warning">
+  <div class="row">
+    <!-- div.col*12>div.bg-info.p-2{col-$} -->
+    <div class="col-12 col-md-6 col-xl-4"><div class="bg-info p-2">col-1</div></div>
+    <div class="col-6 col-md-4"><div class="bg-info p-2">col-2</div></div>
+    <div class="col-6 col-md-2 col-xl-4"><div class="bg-info p-2">col-3</div></div>
+  </div>
+</div>
+
+<h2>
+  On peut modifier l'ordre des colonnes avec order-* et order-*-*
+</h2>
+
+<div class="container bg-warning">
+  <div class="row">
+    <!-- div.col*12>div.bg-info.p-2{col-$} -->
+    <div class="order-3 order-md-1 col-12 col-md-6 col-xl-4"><div class="bg-info p-2">col-1</div></div>
+    <div class="order-1 order-md-2 col-6 col-md-4"><div class="bg-info p-2">col-2</div></div>
+    <div class="order-2 order-md-3 col-6 col-md-2 col-xl-4"><div class="bg-info p-2">col-3</div></div>
+  </div>
+</div>
+
+<h2>
+  On peut mettre des blancs avant les colonnes avec offset-* et offset-*-*
+</h2>
+
+<div class="container bg-warning">
+  <div class="row">
+    <!-- div.col*12>div.bg-info.p-2{col-$} -->
+    <div class="col-3"><div class="bg-info p-2">col-1</div></div>
+    <div class="col-3"><div class="bg-info p-2">col-2</div></div>
+    <div class="col-6 col-md-3 offset-md-3"><div class="bg-info p-2">col-3</div></div>
+  </div>
+</div>
+</body>
+</html>

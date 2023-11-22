@@ -138,6 +138,7 @@ La mise en page en grille en CSS offre une flexibilité exceptionnelle pour cré
   </aside>
   <footer>Contactez moi@monsite.com</footer>
 </div>
+
 ```
 
 ```css
