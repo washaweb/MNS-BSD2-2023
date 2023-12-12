@@ -1,0 +1,19 @@
+{
+  "name": "jour-12-bootstrap",
+  "version": "1.0.0",
+  "description": "un projet exemple pour utiliser bootstrap avec npm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bootstrap",
+    "demo"
+  ],
+  "author": "Jerome Poslednik",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.5.1",
+    "bootstrap": "^5.3.2"
+  }
+}
