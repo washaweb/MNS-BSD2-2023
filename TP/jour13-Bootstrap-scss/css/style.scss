@@ -1,0 +1,52 @@
+// ma personnalisation des variables bootstrap
+@import '_variables.scss'; //le underscore est obligatoire pour prévenir la compliation de ce fichier en css
+@import '_fonts.scss'; //le underscore est obligatoire pour prévenir la compliation de ce fichier en css
+
+// bootstrap scss
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+section {
+  height: 400px;
+}
+
+/* FOOTER */
+
+.main-footer {
+  position: relative;
+  padding: 60px 0;
+  border: 1px solid var(--bs-danger);
+}
+
+.circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  margin: 0px 4px;
+  line-height: 40px;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+}
+
+.circle-top {
+  display: block;
+  text-decoration: none;
+  position: absolute;
+  top: -27px;
+  left: auto;
+  right: auto;
+  width: 54px;
+  height: 54px;
+  line-height: 54px;
+  font-size: 24px;
+  background-color: #e74c3c;
+}
+.circle-facebook {
+  background-color: #3B5998;
+}
+.circle-youtube {
+  background-color: #e74c3c;
+}
+.circle-instagram {
+  background-color: #FF006C;
+}

@@ -2,6 +2,11 @@ section {
   height: 400px;
 }
 
+
+.navbar-padding-gap {
+  padding-top: 56px;
+}
+
 /* FOOTER */
 
 .main-footer {
