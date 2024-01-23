@@ -1,0 +1,98 @@
+/* J'importe mes typos personalisées pour pouvoir les utiliser dans mon document */
+@import url('../fonts/stylesheet.css');
+
+/*
+ 1 - Header
+ 2 - Footer
+ 3 - Typos, styles généraux
+ 4 - Section: Hero
+ 5 - Section: Our Works
+ 6 - Section: Pricing Table
+ 7 - Section: Contact
+*/
+
+/* 1 - Header
+--------------------------------------------------
+*/
+
+.navbar-padding-gap {
+  padding-top: 56px;
+}
+
+
+/* 2 - Footer
+--------------------------------------------------
+*/
+.main-footer {
+  position: relative;
+  padding: 60px 0;
+  border: 1px solid var(--bs-danger);
+}
+
+.circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  margin: 0px 4px;
+  line-height: 40px;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+}
+
+.circle-top {
+  display: block;
+  text-decoration: none;
+  position: absolute;
+  top: -27px;
+  left: auto;
+  right: auto;
+  width: 54px;
+  height: 54px;
+  line-height: 54px;
+  font-size: 24px;
+  background-color: #e74c3c;
+}
+.circle-facebook {
+  background-color: #3B5998;
+}
+.circle-youtube {
+  background-color: #e74c3c;
+}
+.circle-instagram {
+  background-color: #FF006C;
+}
+
+/* 3 - Typos, styles généraux
+--------------------------------------------------
+*/
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Pontiac', sans-serif;
+}
+
+
+/* 4 - Section: Hero
+--------------------------------------------------
+*/
+#hero {
+  /* arrière plan de la section */
+  background: url('../imgs/hero-image.jpg') no-repeat center bottom / cover;
+}
+#hero .container {
+  /* conteneur flex pour l'alignement vertical centré */
+  height: calc(100vh - 80px);
+}
+
+
+/* 5 - Section: Our Work
+--------------------------------------------------
+*/
+
+
+/* 6 - Section: Pricing Table
+--------------------------------------------------
+*/
+
+/* 7 - Section: Contact
+--------------------------------------------------
+*/
