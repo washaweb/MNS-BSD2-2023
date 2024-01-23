@@ -14,6 +14,18 @@
 /* 1 - Header
 --------------------------------------------------
 */
+.navbar .navbar-brand {
+  font-family: 'Pontiac', sans-serif;
+  font-size: 36px;
+  letter-spacing: .2px;
+  font-weight: bold;
+}
+
+.navbar .nav-link {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
 
 .navbar-padding-gap {
   padding-top: 56px;
@@ -68,6 +80,7 @@
 */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Pontiac', sans-serif;
+  font-weight: normal;
 }
 
 
@@ -81,7 +94,14 @@ h1, h2, h3, h4, h5, h6 {
 #hero .container {
   /* conteneur flex pour l'alignement vertical centré */
   height: calc(100vh - 80px);
+  min-height: 440px; /* pour les mobiles */
 }
+@media (min-height: 768px) { /* pour 768px et + */
+  #hero .container {
+    min-height: 540px;
+  }
+}
+
 
 
 /* 5 - Section: Our Work

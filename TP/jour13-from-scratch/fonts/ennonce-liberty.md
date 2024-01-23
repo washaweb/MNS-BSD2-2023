@@ -33,7 +33,7 @@ Exercice noté Liberty: Reproduire au format HTML/CSS la maquette jointe à ces 
 
 - conteneur fluide, largeur totale de la fenêtre
 - hauteur: 68px
-- padding: 11px 668px
+- padding horizontal: 11px
 - logo: Pontiac Black, 36px, approche -20, #fff
 - navigation: Arial/Helvetica, 18px, #fff
 
