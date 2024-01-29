@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- l'instruction defer permet d'attendre la fin du chargement du document, 
+    pour qu'il n'y ait pas d'erreur javascript lorsqu'on interragit avec le DOM -->
+  <script defer>
+
+    // l'instruction defer ne suffit souvent pas, il faut sois-même tester si le document est prêt
+    // à l'aide d'une fonction javavscript et d'un écouteur d'événement
+    document.addEventListener("DOMContentLoaded", function () {
+      // en js il existe 2 grands prototypes (Objects/functions), qui sont le document et la window
+      // window "stocke" les fonctions javascript et les variables
+      // par exemple quand j'écris
+      let a = 0;
+      // c'est la même chose que si j'écris 
+      window.a = 0;
+
+      // Le document, quant à lui permet d'intéragir avec le code HTML, 
+      //on parle ici du DOM, le Document Object Model, qui est une API (Application Program Interface)
+      let baliseBody = document.body //stocke une référence vers le Nœeud HTML de body
+
+      // Je peux ensuite travailler avec le body
+      baliseBody.style.backgroundColor = 'blue'
+    })
+    
+  </script>
+</head>
+<body>
+  
+  <h1 onclick="alert('vous avez cliqué sur le titre');console.log('une nouvelle instruction au clic sur le titre')">Mon titre</h1>
+
+  <script>
+    function myFunction (param1) {
+      return param1
+      
+    }
+  </script>
+
+  <!-- importer un module javascript, un module est un  script qui exporte/expose des variables ou des fonctions qui peuvent être utilisées depuis un autre module, ou un autre script -->
+  <script type="module" src="js/module.mjs"></script>
+
+  <!-- on peut externaliser le script -->
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
