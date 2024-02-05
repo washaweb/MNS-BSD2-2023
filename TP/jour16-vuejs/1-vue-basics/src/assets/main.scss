@@ -1,0 +1,26 @@
+$primary: #00c8ff;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: $primary;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.container {
+  width: 400px;
+  margin: 40px auto;
+}
