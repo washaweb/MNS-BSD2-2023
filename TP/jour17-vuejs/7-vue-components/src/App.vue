@@ -12,7 +12,7 @@
       />
 
       <!-- ici c'est la variable products qui représente la liste des données des produits -->
-      <pre>{{ products }}</pre>
+      <!-- <pre>{{ products }}</pre> -->
     </div>
     <button :disabled="!inStock" :class="{ notInStock: !inStock }" @click="addToCart()">
       Ajouter au panier
