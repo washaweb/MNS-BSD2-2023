@@ -25,6 +25,8 @@
       <ul class="product-details">
         <li v-for="(detail, index) in product.details" :key="index">{{ detail }} - {{ index }}</li>
       </ul>
+
+      <button @click="addProductToCart()">Ajouer au panier</button>
     </div>
   </div>
 </template>
@@ -34,6 +36,11 @@
 export default {
   props: ['product'], //les props sont des datas qui viennent des propriétés du composants déclarées dans
   methods: {
+    addProductToCart() {
+      // emit permet de déclencher un événement dans le composant parent
+      // this.$emit('nomdelevent', {var1: val, var2: val2... })
+      this.$emit('updateCart')
+    },
     previewImage(variant) {
       // on reçoit en paramètre, l'un des objets du tableau variants[]
       // console.log(variant)

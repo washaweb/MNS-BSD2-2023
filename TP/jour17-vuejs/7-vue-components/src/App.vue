@@ -4,7 +4,12 @@
     <!-- on a créé un composant product pour séparer la logique et le code de l'application -->
     <div class="product-list">
       <!-- ici on utilise le composant ProductItem pour représenter le template d'un produit -->
-      <ProductItem v-for="(product, index) in products" :key="index" :product="product" />
+      <ProductItem
+        @updateCart="addToCart()"
+        v-for="(product, index) in products"
+        :key="index"
+        :product="product"
+      />
 
       <!-- ici c'est la variable products qui représente la liste des données des produits -->
       <pre>{{ products }}</pre>
