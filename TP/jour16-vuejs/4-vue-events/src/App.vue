@@ -85,24 +85,4 @@ export default {
     }
   }
 }
-
-const humans = [
-  {
-    name: 'John',
-    age: 21
-  },
-  {
-    name: 'Marie',
-    age: 18
-  },
-  {
-    name: 'Jack',
-    age: 16
-  }
-]
-
-for (const person in humans) {
-  console.log(person.name)
-  console.log(person.age)
-}
 </script>

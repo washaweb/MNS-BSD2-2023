@@ -1,6 +1,9 @@
 <!-- Le template est la vue du document -->
 <template>
   <div class="container">
+    <p>
+      {{ fullName }}
+    </p>
     <div class="product">
       <div class="product-img">
         <img :src="image" :alt="product" />
@@ -33,6 +36,7 @@
     <!-- le bouton déclenche au click la méthode addToCart qui ajoute un élément au panier -->
     <!-- <button v-on:click="addToCart()">Ajouter au panier</button> -->
     <!-- On crée une classe dynamique, le nom de la classe est notInStock, elle s'applique si la variable inStock est false  -->
+
     <button :disabled="!inStock" :class="{ notInStock: !inStock }" @click="addToCart()">
       Ajouter au panier
     </button>
@@ -48,9 +52,10 @@ export default {
   data() {
     return {
       product: 'Socks',
+      firstName: 'John',
+      lastName: 'Doe',
       image: 'https://picsum.photos/200/300?image=1',
-      inStock: false,
-      inventory: 0,
+      inventory: 100,
       details: ['80% coton', '20% polyester', 'Genre mixte'],
       colors: [
         { value: 0, text: 'Rouge' },
@@ -75,7 +80,24 @@ export default {
       cart: 0
     }
   },
-  mounted() {},
+  computed: {
+    inStock() {
+      return this.inventory > 0
+    },
+    // ajouter une computed property pour obtenir le nom complet firstName lastName
+    fullName() {
+      return this.firstName + ' ' + this.lastName
+    }
+  },
+  // hook qui se lance à l'instantiation du composant
+  // les différents hooks disponibles dans le processus de mise à jour d'un composant
+  //https://vuejs.org/guide/essentials/lifecycle
+  mounted() {
+    alert('toto')
+  },
+  updated() {
+    console.log('updated')
+  },
   // on décrit les méthodes utilisable dans notre composant
   methods: {
     // ici ajoute un élément au panier
