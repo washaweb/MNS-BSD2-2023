@@ -1,0 +1,12 @@
+// import des css de fontawesome
+@import '@fortawesome/fontawesome-free/css/all.css';
+
+// import de mes propres variables pour bootstrap
+@import './_variables.scss';
+
+// import des scss de bootstrap
+@import 'bootstrap/scss/bootstrap';
+
+.table tr:last-of-type td {
+  border-bottom: none;
+}
