@@ -6,3 +6,7 @@
 
 // import des scss de bootstrap
 @import 'bootstrap/scss/bootstrap';
+
+.table tr:last-of-type td {
+  border-bottom: none;
+}
