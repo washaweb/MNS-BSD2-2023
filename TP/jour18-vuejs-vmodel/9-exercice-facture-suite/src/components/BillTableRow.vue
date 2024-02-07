@@ -1,3 +1,4 @@
+<!-- composant BillTableRow.vue -->
 <template>
   <tr v-if="bill">
     <td>{{ bill.date }} - {{ bill.description }} - {{ bill.billnum }}</td>
@@ -27,7 +28,7 @@ export default {
     },
     // edite une facture en fonction de son id
     childEditBill(id) {
-      console.log('editer la facture', id)
+      this.$emit('onEditBill', id)
     }
   }
 }
