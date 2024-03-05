@@ -87,3 +87,4 @@ export default {
    ```js
     <button @click="handleClick">Cliquez ici</button>
    ```
+   
