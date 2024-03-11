@@ -134,7 +134,7 @@ Un effet secondaire de ce mode est que vous pourriez tomber sur une page non val
     //...
     routes: [
       //...à placer en dernier dans les routes
-      { path: '*', component: NotFoundView }
+      { path: '/:pathMatch(.*)*', component: NotFoundView }
     ]
     //...
 ```
