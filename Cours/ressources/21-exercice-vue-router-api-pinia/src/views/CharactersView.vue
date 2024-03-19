@@ -1,4 +1,3 @@
-import { compileTemplate } from 'vue/compiler-sfc';
 <template>
   <main>
     <h1>Les personnages de Star Wars</h1>
