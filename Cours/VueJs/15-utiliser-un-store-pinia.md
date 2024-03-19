@@ -47,7 +47,7 @@ puis l'importer dans `src/main.js`
   const pinia = createPinia()  //<<<---ajout ici
   const app = createApp(App)
 
-  app.use(pinia)
+  app.use(pinia) //<<<---ajout ici
   app.mount('#app')
 ```
 
